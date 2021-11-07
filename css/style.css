@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+.background-img {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+.background-img .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background-img .container .card {
+  background-color: white;
+  border-radius: 1em;
+  width: 325px;
+  height: 550px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-img .container .card img {
+  width: inherit;
+}
+
+.background-img .container .card .card-content {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.background-img .container .card .card-content h1 {
+  color: var(--Dark-blue);
+  font-size: 25px;
+  margin: 5px 20px;
+}
+
+.background-img .container .card .card-content p {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  padding: 5px 0;
+  line-height: 1.5em;
+  margin: 0 20px;
+}
+
+.background-img .container .card .annual-plan-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box {
+  background-color: var(--Very-pale-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  padding: 15px 13px;
+  border-radius: .6em;
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box .logo {
+  margin-right: 5px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box .annual-plan {
+  margin: 0 30px 0 10px;
+  padding-top: 3px;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box .annual-plan h1 {
+  font-size: 16px;
+  color: var(--Dark-blue);
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box .change {
+  margin-left: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.background-img .container .card .annual-plan-container .annual-plan-box .change a:hover {
+  color: #183ea0;
+  text-decoration: none;
+}
+
+.background-img .container .card .payment-btn {
+  padding: 20px 0;
+}
+
+.background-img .container .card .payment-btn button {
+  background-color: var(--Bright-blue);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 20px -5px, rgba(0, 0, 0, 0.04) 0px 1px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 20px -5px, rgba(0, 0, 0, 0.04) 0px 1px 10px -5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: .6em;
+  width: 280px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.background-img .container .card .payment-btn button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 20px -5px, rgba(0, 0, 0, 0.08) 0px 1px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 20px -5px, rgba(0, 0, 0, 0.08) 0px 1px 10px -5px;
+  background-color: #183ea0;
+}
+
+.background-img .container .card .payment-btn a {
+  margin: 20px;
+  display: flow-root;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--Desaturated-blue);
+}
+
+.background-img .container .card .payment-btn a:hover {
+  color: #4f5976;
+}
+
+.background-img .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px;
+}
+
+.background-img .attribution a {
+  color: #3e52a3;
+}
+
+.background-img .attribution a:hover {
+  color: #000654;
+}
+
+@media (min-width: 700px) {
+  .background-img .container .card {
+    width: 380px;
+  }
+  .background-img .container .card .annual-plan-container .annual-plan-box {
+    width: 330px;
+    padding: 10px 10px;
+  }
+  .background-img .container .card .annual-plan-container .annual-plan-box .change {
+    margin-left: 50px;
+  }
+  .background-img .container .card .payment-btn {
+    padding: 15px;
+  }
+  .background-img .container .card .payment-btn button {
+    width: 330px;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
