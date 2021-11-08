@@ -25,7 +25,7 @@ body {
 .background-curve {
   background-image: url(../images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  padding: 40px 0;
+  padding: 150px 0;
 }
 
 .background-curve .container {
