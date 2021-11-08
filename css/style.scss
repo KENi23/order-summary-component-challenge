@@ -23,7 +23,7 @@ body {
     font-size: 16px;
 }
 
-.background-img {
+.background-curve {
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     padding: 40px 0;
@@ -32,19 +32,21 @@ body {
         display: flex;
         justify-content: center;
 
-        .card {
+        .order {
             background-color: white;
             border-radius: 1em;
             width: 325px;
             height: 550px;
             text-align: center;
             overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 20px -5px,
+                rgba(0, 0, 0, 0.04) 0px 1px 10px -5px;
 
             img {
                 width: inherit;
             }
 
-            .card-content {
+            .order-details {
                 margin: 10px 0;
                 padding: 10px;
 
@@ -162,20 +164,20 @@ body {
 }
 
 @media (min-width: 700px) {
-    .background-img .container .card {
+    .background-curve .container .order {
         width: 380px;
     }
 
-    .background-img .container .card .annual-plan-container .annual-plan-box {
+    .background-curve .container .order .annual-plan-container .annual-plan-box {
         width: 330px;
         padding: 10px 10px;
     }
 
-    .background-img .container .card .annual-plan-container .annual-plan-box .change {
+    .background-curve .container .order .annual-plan-container .annual-plan-box .change {
         margin-left: 50px;
     }
 
-    .background-img .container .card .payment-btn {
+    .background-curve .container .order .payment-btn {
         padding: 15px;
 
         button {
